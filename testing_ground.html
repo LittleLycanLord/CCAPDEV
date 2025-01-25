@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML Elements Showcase</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 20px;
+			}
+			h1,
+			h2,
+			h3 {
+				color: #333;
+			}
+			p {
+				color: #666;
+			}
+			.highlight {
+				background-color: yellow;
+			}
+			table {
+				width: 100%;
+				border-collapse: collapse;
+			}
+			table,
+			th,
+			td {
+				border: 1px solid black;
+			}
+			th,
+			td {
+				padding: 10px;
+				text-align: left;
+			}
+			.button {
+				background-color: #4caf50;
+				color: white;
+				padding: 10px 20px;
+				border: none;
+				cursor: pointer;
+			}
+			.button:hover {
+				background-color: #45a049;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>HTML Elements Showcase</h1>
+		<h2>Headings</h2>
+		<h3>This is a Heading 3</h3>
+		<p>
+			This is a paragraph.
+			<span class="highlight">This text is highlighted.</span>
+		</p>
+
+		<h2>Lists</h2>
+		<ul>
+			<li>Unordered List Item 1</li>
+			<li>Unordered List Item 2</li>
+			<li>Unordered List Item 3</li>
+		</ul>
+		<ol>
+			<li>Ordered List Item 1</li>
+			<li>Ordered List Item 2</li>
+			<li>Ordered List Item 3</li>
+		</ol>
+
+		<h2>Table</h2>
+		<table>
+			<tr>
+				<th>Header 1</th>
+				<th>Header 2</th>
+				<th>Header 3</th>
+			</tr>
+			<tr>
+				<td>Data 1</td>
+				<td>Data 2</td>
+				<td>Data 3</td>
+			</tr>
+			<tr>
+				<td>Data 4</td>
+				<td>Data 5</td>
+				<td>Data 6</td>
+			</tr>
+		</table>
+
+		<h2>Form</h2>
+		<form>
+			<label for="name">Name:</label><br />
+			<input type="text" id="name" name="name" /><br /><br />
+			<label for="email">Email:</label><br />
+			<input type="email" id="email" name="email" /><br /><br />
+			<input type="submit" value="Submit" />
+		</form>
+
+		<h2>Button</h2>
+		<button class="button" onclick="alert('Button clicked!')">
+			Click Me
+		</button>
+
+		<h2>Image</h2>
+		<img src="https://via.placeholder.com/150" alt="Sample Image" />
+
+		<h2>Link</h2>
+		<a href="https://www.example.com" target="_blank">Visit Example.com</a>
+
+		<h2>JavaScript</h2>
+		<button class="button" onclick="changeText()">Change Text</button>
+		<p id="text">This is some text.</p>
+
+		<script>
+			function changeText() {
+				document.getElementById("text").innerText =
+					"The text has been changed!";
+			}
+		</script>
+	</body>
+</html>
