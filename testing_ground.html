@@ -9,12 +9,12 @@
 				font-family: Arial, sans-serif;
 				margin: 20px;
 			}
-			bigHeading,
-			headingNo1,
-			headingNo2 {
+			h1,
+			h2,
+			h3 {
 				color: #333;
 			}
-			paragraph1 {
+			p {
 				color: #666;
 			}
 			.highlight {
@@ -47,15 +47,15 @@
 		</style>
 	</head>
 	<body>
-		<bigHeading>HTML Elements Showcase</bigHeading>
-		<headingNo1>Headings</headingNo1>
-		<headingNo2>This is a Heading 3</headingNo2>
-		<paragraph1>
+		<h1>HTML Elements Showcase</h1>
+		<h2>Headings</h2>
+		<h3>This is a Heading 3</h3>
+		<p>
 			This is a paragraph.
 			<span class="highlight">This text is highlighted.</span>
-		</paragraph1>
+		</p>
 
-		<headingNo1>Lists</headingNo1>
+		<h2>Lists</h2>
 		<ul>
 			<li>Unordered List Item 1</li>
 			<li>Unordered List Item 2</li>
@@ -67,7 +67,7 @@
 			<li>Ordered List Item 3</li>
 		</ol>
 
-		<headingNo1>Table</headingNo1>
+		<h2>Table</h2>
 		<table>
 			<tr>
 				<th>Header 1</th>
@@ -86,7 +86,7 @@
 			</tr>
 		</table>
 
-		<headingNo1>Form</headingNo1>
+		<h2>Form</h2>
 		<form>
 			<label for="name">Name:</label><br />
 			<input type="text" id="name" name="name" /><br /><br />
@@ -95,20 +95,20 @@
 			<input type="submit" value="Submit" />
 		</form>
 
-		<headingNo1>Button</headingNo1>
+		<h2>Button</h2>
 		<button class="button" onclick="alert('Button clicked!')">
 			Click Me
 		</button>
 
-		<headingNo1>Image</headingNo1>
+		<h2>Image</h2>
 		<img src="https://via.placeholder.com/150" alt="Sample Image" />
 
-		<headingNo1>Link</headingNo1>
+		<h2>Link</h2>
 		<a href="https://www.example.com" target="_blank">Visit Example.com</a>
 
-		<headingNo1>JavaScript</headingNo1>
+		<h2>JavaScript</h2>
 		<button class="button" onclick="changeText()">Change Text</button>
-		<paragraph1 id="text">This is some text.</paragraph1>
+		<p id="text">This is some text.</p>
 
 		<script>
 			function changeText() {
