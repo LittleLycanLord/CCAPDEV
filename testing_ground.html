@@ -111,15 +111,24 @@
 		<p id="text">This is some text.</p>
 
 		<h2>Pictures</h2>
-		<img src="Images/alcoholism.jpg" alt="Sample Image 1" style="width:42px;height:42px;"/>
-		<img src="Images/blahaj.png" alt="Sample Image 2" style="width:42px;height:42px;"/>
-		<img src="Images/me.jpg" alt="Sample Image 3" style="width:42px;height:42px;"/>
+			<img id="image1" src="Images/alcoholism.jpg" alt="Sample Image 1" />
+			<img id="image2" src="Images/blahaj.png" alt="Sample Image 2" />
+			<img id="image3" src="Images/me.jpg" alt="Sample Image 3" />
 
 		<script>
+			let imageSize = "250px";
+
 			function changeText() {
 				document.getElementById("text").innerText =
 					"The text has been changed!";
 			}
+
+			document.getElementById("image1").style.width = imageSize;
+			document.getElementById("image1").style.height = imageSize;
+			document.getElementById("image2").style.width = imageSize;
+			document.getElementById("image2").style.height = imageSize;
+			document.getElementById("image3").style.width = imageSize;
+			document.getElementById("image3").style.height = imageSize;
 		</script>
 	</body>
 </html>
